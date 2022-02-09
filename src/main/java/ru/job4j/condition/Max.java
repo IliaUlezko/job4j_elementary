@@ -17,7 +17,8 @@ class MaxTest {
         b = 2;
         c = Max.max(a, b);
         System.out.println(c);
-        a = b = 4;
+        a = 4;
+        b = 4;
         c = Max.max(a, b);
         System.out.println(c);
     }
