@@ -12,15 +12,13 @@ public class MathCalculator {
     }
 
     public static double differenceAndDivision(double a, double b) {
-        return MathFunction.difference(a, b)
-                + MathFunction.division(a, b);
+        return difference(a, b)
+                + division(a, b);
     }
 
     public static double sumAll(double a, double b) {
-        return MathFunction.sum(a, b)
-                + MathFunction.multiply(a, b)
-                + MathFunction.difference(a, b)
-                + MathFunction.division(a, b);
+        return sumAndMultiply(a, b)
+                + differenceAndDivision(a, b);
     }
 
     public static void main(String[] args) {
