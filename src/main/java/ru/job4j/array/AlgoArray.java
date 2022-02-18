@@ -10,7 +10,7 @@ public class AlgoArray {
         int t = array[1];
         array[1] = array[2];
         array[2] = t;
-//12354
+
         int p = array[3];
         array[3] = array[4];
         array[4] = p;
