@@ -9,10 +9,10 @@ public class Machine {
         int[] rsl = new int[100];
         int size = 0;
         int result = money - price;
-        for (int index = 0; index < coins.length; index++) {
-            while (result >= coins[index]) {
-                result -= coins[index];
-                rsl[size] = coins[index];
+        for (int index : coins) {
+            while (result >= index) {
+                result -= index;
+                rsl[size] = index;
                 size++;
             }
         }
