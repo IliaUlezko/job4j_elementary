@@ -1,6 +1,7 @@
 package ru.job4j.condition;
 
 public class Max {
+
     public static int max(int left, int right) {
        int rsl = left > right ? left : right;
        return rsl;
@@ -8,6 +9,7 @@ public class Max {
 }
 
 class MaxTest {
+
     public static void main(String[] args) {
         int a = 3;
         int b = 4;
