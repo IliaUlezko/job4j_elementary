@@ -9,7 +9,6 @@ public class Calculator {
         int five = 5;
         int six = 6;
 
-
         int onePlusTwo = one + two;
         System.out.println(onePlusTwo);
 
