@@ -60,4 +60,28 @@ class SimpleStringEncoderTest {
         String result = SimpleStringEncoder.encode(input);
         assertThat(result).isEqualTo(expected);
     }
+
+    @Test
+    void whenStringa3b3c3ThenResultaaabbbccc() {
+        String input = "a3b3c3";
+        String expected = "aaabbbccc";
+        String result = SimpleStringEncoder.decode(input);
+        assertThat(result).isEqualTo(expected);
+    }
+
+    @Test
+    void whenStringabcThenResultabc1() {
+        String input = "abc";
+        String expected = "abc";
+        String result = SimpleStringEncoder.decode(input);
+        assertThat(result).isEqualTo(expected);
+    }
+
+    @Test
+    void when1Stringab2c3ThenResultabbccc() {
+        String input = "ab2c3";
+        String expected = "abbccc";
+        String result = SimpleStringEncoder.decode(input);
+        assertThat(result).isEqualTo(expected);
+    }
 }
